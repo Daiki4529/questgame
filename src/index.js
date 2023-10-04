@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 
-import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import NoPage from "./pages/NoPage";

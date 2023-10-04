@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { collection, getDocs } from "firebase/firestore";
 
 function Home() {
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
 
+  const navigate = useNavigate();
   const handleLogin = () => {
     if (firstname && lastname) {
+      navigate("/profile");
+      alert(`${firstname} ${lastname} a tenté de se connecter en vain.`);
     }
   };
 
